@@ -1,0 +1,367 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Navbar */
+.navbar {
+    background:#664c28;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-toggle-label {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+}
+
+.menu-items li {
+    margin: 0 1rem;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-items a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Showcase Area */
+.showcase-area {
+    background: url('https://salt.al/wp-content/uploads/2023/06/XHB7164-1.jpg') no-repeat center center/cover;
+    color: rgb(5, 5, 5);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background: rgb(177, 147, 93);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: burlywood;
+}
+
+/* About Section */
+#about {
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Food Section */
+#food {
+    padding: 5rem 0;
+    background: white;
+    text-align: center;
+}
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-type {
+    flex: 1;
+    margin: 1rem;
+    position: relative;
+}
+
+.food-type .img-container {
+    position: relative;
+}
+
+.food-type img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.img-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.img-content h3 {
+    margin: 0;
+}
+
+.img-content .btn-primary {
+    margin-top: 0.5rem;
+}
+
+/* Food Menu Section */
+#food-menu {
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+
+.food-menu-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.food-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.food-img img {
+    width: 100%;
+    height: auto;
+}
+
+.food-description {
+    padding: 1rem;
+    text-align: center;
+}
+
+.food-title {
+    margin: 0;
+}
+
+.food-price {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 5rem 0;
+    background: white;
+}
+
+.testimonials-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonials-box {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customers-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.customer-photo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.star-rating .fa-star {
+    color: #ffd700;
+}
+
+.star-rating .fa-star.checked {
+    color: #ffd700;
+}
+
+.testimonials-text {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Contact Section */
+#contact {
+    padding: 5rem 0;
+    background: white;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-img {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.contact-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.form-container {
+    flex: 1;
+    padding: 1rem;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    background-color: rgb(177, 147, 93);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-container button:hover {
+    background-color: burlywood;
+}
+
+/* Footer */
+#footer {
+    background: #664c28;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+#footer h2 {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .menu-items {
+        display: flex;
+    }
+
+    .food-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .food-type {
+        margin-bottom: 2rem;
+    }
+
+    .food-menu-container {
+        flex-direction: column;
+    }
+}
